@@ -1,0 +1,26 @@
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+@for $i from 1 through 20 {
+  .gap-#{$i} {
+    gap: #{$i}px;
+  }
+}

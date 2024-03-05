@@ -1,0 +1,20 @@
+.trending {
+  width: 100%;
+  max-width: 192rem;
+  min-height: 66.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 7.2rem;
+  align-items: center;
+
+  &__title {
+    margin-top: 10rem;
+  }
+
+  &__cards {
+    display: flex;
+    gap: 3.2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}

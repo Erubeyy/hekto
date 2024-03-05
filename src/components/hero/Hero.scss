@@ -1,0 +1,162 @@
+.hero__container {
+  width: 100%;
+  max-width: 192rem;
+}
+
+.hero {
+  width: 100%;
+  height: 100%;
+  min-height: 76rem;
+  background-color: #f2f0ff;
+  position: relative;
+
+  @media screen and (max-width: 800px) {
+    min-height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__lamp {
+    @media screen and (max-width: 1600px) {
+      display: none;
+    }
+
+    position: absolute;
+    top: 0;
+    left: 7rem;
+    z-index: 300;
+  }
+
+  &__ellipse {
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+
+    position: absolute;
+    top: 50.3rem;
+    left: 18.4rem;
+  }
+
+  &__pagination {
+    position: absolute;
+    bottom: 4.4rem;
+    // left: 91.7rem;
+    left: 47.76%;
+  }
+
+  &__content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    width: 100%;
+    max-width: 58rem;
+    top: 20.3rem;
+    // left: 41.5rem;
+    left: 21.61%;
+    z-index: 300;
+
+    @media screen and (max-width: 800px) {
+      position: static;
+      margin-left: 2rem;
+    }
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+
+      & > span {
+        color: var(--primary-color);
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 2rem;
+        letter-spacing: 0.1rem;
+        font-family: Lato;
+      }
+
+      & > p {
+        color: var(--color-grey-3);
+        font-family: Lato;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2rem;
+        max-width: 55.1rem;
+      }
+    }
+
+    &-btn {
+      width: 100%;
+      max-width: 15.6rem;
+      height: 5.2rem;
+      border-radius: 0.8rem;
+      background-color: var(--primary-color);
+      padding: 1.6rem 4rem;
+      color: var(--color-white);
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: 2rem;
+    }
+  }
+
+  &__darkBG {
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+
+    position: absolute;
+    // left: 104rem;
+    right: 12%;
+    top: 7.8rem;
+    z-index: 2;
+  }
+
+  &__lightBG {
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+
+    position: absolute;
+    // left: 109.6rem;
+    right: 9%;
+    top: 3.7rem;
+    z-index: 4;
+  }
+
+  &__headphones {
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+
+    position: absolute;
+    // left: 107rem;
+    right: 12%;
+    top: 3.4rem;
+    z-index: 6;
+  }
+
+  &__discount {
+    position: absolute;
+    // left: 159.8rem;
+    right: 9.66%;
+    top: 9.4rem;
+    z-index: 8;
+    width: 13.65rem;
+    height: 13.84rem;
+    background-image: url(../../assets/backgrounds/discount-purple-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+
+    & > h3 {
+      width: 7.2rem;
+      height: 8.8rem;
+      color: var(--color-white);
+      padding: 2.8rem 3.26rem 2.25rem 3.2rem;
+    }
+  }
+}

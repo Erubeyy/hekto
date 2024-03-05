@@ -1,0 +1,137 @@
+.products {
+  width: 100%;
+  max-width: 192rem;
+  height: auto;
+
+  &__container {
+    display: grid;
+    margin: 5.6rem 28.4rem 0 28.4rem;
+
+    @media screen and (max-width: 1470px) {
+      margin: 5.6rem 4.4rem 0 4.4rem;
+    }
+  }
+
+  &__topContent {
+    max-width: 22rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    align-items: center;
+    justify-self: center;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 1.6rem;
+    max-width: 14.2rem;
+    font-family: Lato;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2rem;
+
+    &-home {
+      color: var(--color-gery-3);
+    }
+    &-products {
+      color: var(--primary-color);
+    }
+  }
+
+  &__viewSort {
+    width: 100%;
+    max-width: 69.4rem;
+    min-height: 4rem;
+    display: flex;
+    gap: 6.4rem;
+    margin: 8rem 0 3.2rem 0;
+    justify-self: end;
+
+    @media screen and (max-width: 1470px) {
+      justify-self: center;
+    }
+
+    &-btn {
+      background-color: var(--color-white);
+      border: none;
+    }
+
+    &-item {
+      display: flex;
+      gap: 1.6rem;
+      align-items: center;
+
+      & > span {
+        width: max-content;
+        color: var(--color-grey-3);
+        font-family: Lato;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2rem;
+      }
+    }
+
+    &-input {
+      width: 14.2rem;
+    }
+
+    &-selectContainer {
+      width: 9.6rem;
+      height: 4rem;
+      display: flex;
+      justify-content: center;
+      border: 1px solid var(--color-grey-2);
+      border-radius: 0.8rem;
+    }
+
+    &-select {
+      border: none;
+      width: 6.8rem;
+      font-family: 'Lato';
+      font-size: 1.4rem;
+      line-height: 1.6rem;
+      font-weight: 400;
+    }
+
+    &-inputContainer {
+      display: flex;
+      height: 4rem;
+      padding-left: 1.6rem;
+      align-items: center;
+      gap: 1.6rem;
+      border-radius: 0.8rem;
+      border: 1px solid var(--color-grey-2);
+
+      & > input {
+        font-family: Lato;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 1.6rem;
+        color: var(--color-black);
+        border: none;
+      }
+
+      & > button {
+        display: flex;
+        padding: 0.8rem;
+        justify-content: center;
+        align-items: center;
+        gap: 0.8rem;
+        border-radius: 3.2rem;
+        background-color: var(--color-white);
+        border: none;
+      }
+    }
+  }
+
+  &__content {
+    margin-top: 3.2rem;
+    display: flex;
+    gap: 17.2rem;
+    margin-bottom: 10rem;
+
+    @media screen and (max-width: 1470px) {
+      gap: 1rem;
+    }
+  }
+}

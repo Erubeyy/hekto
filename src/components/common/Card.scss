@@ -1,0 +1,71 @@
+.card {
+  border-radius: 0.8rem;
+  box-shadow: 8px 24px 32px -16px rgba(16, 23, 80, 0.15);
+  width: 30.4rem;
+  min-height: 34.4rem;
+
+  &:hover {
+    transform: translateY(-2.4rem);
+    box-shadow: 8px 64px 80px -16px rgba(16, 23, 80, 0.15);
+    transition: 0.4s;
+  }
+
+  &__img {
+    margin: 1.6rem 1.6rem 0 1.6rem;
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 30.4rem;
+    max-height: 13.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin-top: 2.4rem;
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2rem;
+  }
+
+  &__code {
+    color: var(--color-grey-3);
+    margin-top: 2.4rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+  }
+
+  &__price {
+    margin-top: 0.8rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 2.4rem;
+  }
+
+  &__ogUniquePrice {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2rem;
+  }
+
+  &__ogPrice {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+
+  &__discPrice {
+    color: var(--color-grey-3);
+    font-family: 'Josefin Sans';
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    height: min-content;
+    text-decoration: line-through;
+  }
+}

@@ -1,0 +1,151 @@
+.discount {
+  width: 100%;
+  max-width: 192rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__title {
+    margin: 10rem 0 2.4rem 0;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 3.2rem;
+    margin-bottom: 2.6rem;
+    font-family: Lato;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    & > li:nth-child(1) {
+      color: var(--primary-color);
+    }
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 131rem;
+    min-height: 56.8rem;
+    margin: 0rem 2rem 0rem 2rem;
+    display: flex;
+    gap: 3.2rem;
+
+    @media screen and (max-width: 1300px) {
+      justify-content: center;
+    }
+  }
+
+  &__leftContent {
+    width: 100%;
+    max-width: 64rem;
+    min-height: 34.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    align-self: center;
+
+    @media screen and (max-width: 1300px) {
+      align-items: center;
+    }
+
+    & > span {
+      color: var(--primary-color);
+      font-size: 2.2rem;
+      font-weight: 700;
+      line-height: 2.8rem;
+    }
+
+    & > p {
+      max-width: 52.3rem;
+      color: var(--color-grey-3);
+      font-family: Lato;
+      font-size: 1.8rem;
+      font-weight: 400;
+      line-height: 2.4rem;
+    }
+
+    & > ul {
+      max-width: 46.4rem;
+      columns: 2;
+      column-gap: 3.2rem;
+      color: var(--color-grey-3);
+
+      @media screen and (max-width: 600px) {
+        columns: unset;
+      }
+
+      & > li:nth-child(2n + 1) {
+        margin-bottom: 2.8rem;
+      }
+
+      & > li {
+        font-family: Lato;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 2rem;
+        display: flex;
+        gap: 0.5rem;
+        align-items: center;
+        width: max-content;
+      }
+    }
+  }
+
+  &__btn {
+    max-width: 15.6rem;
+    display: flex;
+    padding: 1.6rem 4rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    border-radius: 0.8rem;
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--color-white);
+    font-family: 'Josefin Sans';
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2rem;
+  }
+
+  &__rightContent {
+    max-width: 63.8rem;
+    max-height: 56.8rem;
+    position: relative;
+
+    @media screen and (max-width: 1300px) {
+      display: none;
+    }
+
+    &-darkBG {
+      width: 47.2rem;
+      height: 47.2rem;
+      background-color: var(--color-grey-2);
+      border-radius: 47.2rem;
+      z-index: 20;
+      position: absolute;
+      top: 4.8rem;
+      left: 8.3rem;
+    }
+
+    &-lightBG {
+      width: 31.6rem;
+      height: 31.6rem;
+      border-radius: 31.6rem;
+      background-color: var(--color-grey-2);
+      opacity: 0.5;
+      z-index: 10;
+      position: absolute;
+      top: 1.1rem;
+      left: 29.6rem;
+    }
+
+    &-img {
+      position: absolute;
+      top: 2.2rem;
+      left: 16.4rem;
+      z-index: 30;
+    }
+  }
+}

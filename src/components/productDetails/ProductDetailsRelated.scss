@@ -1,0 +1,26 @@
+.productDetailsRelated {
+  width: 100%;
+  max-width: 131.2rem;
+  min-height: 65.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    align-self: flex-start;
+    margin-bottom: 4rem;
+    margin-top: 10rem;
+    margin-left: 2rem;
+  }
+
+  &__cards {
+    display: flex;
+    gap: 3.2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &-item {
+      position: relative;
+    }
+  }
+}

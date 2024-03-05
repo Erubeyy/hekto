@@ -1,0 +1,93 @@
+.italianSofa {
+  width: 100%;
+  max-width: 192rem;
+  background-color: #f1f0ff;
+  min-height: 57.6rem;
+  display: flex;
+  gap: 3.3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__leftSide {
+    width: 64rem;
+    height: 57.6rem;
+    position: relative;
+    // margin-left: 30.5rem;
+  }
+
+  &__bg {
+    margin-top: 3.64rem;
+  }
+
+  &__sofa {
+    position: absolute;
+    top: 0;
+    left: -4.5rem;
+    z-index: 30;
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 53.4rem;
+    max-height: 33.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+    margin: 9.7rem 1rem 8rem 0rem;
+  }
+
+  &__list {
+    color: var(--color-grey-3);
+    font-family: Lato;
+    display: flex;
+    font-size: 1.6rem;
+    flex-direction: column;
+    gap: 1.6rem;
+
+    & > li {
+      & > :nth-child(1) {
+        font-weight: 400;
+        line-height: 2rem;
+      }
+
+      font-weight: 500;
+      line-height: 175%;
+      letter-spacing: 0.024rem;
+
+      display: flex;
+      gap: 1.6rem;
+    }
+  }
+
+  &__addCart {
+    display: flex;
+    gap: 1.6rem;
+    max-width: 29.3rem;
+    align-items: center;
+
+    & > span {
+      color: var(--color-black);
+      font-size: 1.4rem;
+      font-weight: 400;
+      line-height: 1.6rem;
+      max-height: fit-content;
+    }
+  }
+
+  &__btn {
+    min-width: 17.1rem;
+    border-radius: 0.8rem;
+    display: flex;
+    padding: 1.6rem 4rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    background-color: var(--primary-color);
+    color: var(--color-white);
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 2rem;
+    border: none;
+    font-family: 'Josefin Sans';
+  }
+}
